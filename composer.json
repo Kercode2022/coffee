@@ -1,0 +1,15 @@
+{
+    "name": "kercode/coffee",
+    "autoload": {
+        "psr-4": {
+            "Kercode\\Coffee\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "bibou56",
+            "email": "93594441+bibou56@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
