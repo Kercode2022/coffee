@@ -39,8 +39,13 @@
 // }
 require('vendor/autoload.php');
 
-$dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+if($_SERVER['HTTP_HOST'] != "coffee-irish.herokuapp.com"){
+    $dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+}
+
+echo("Hello world !");
+echo "<br/>";
 
 function dbaccess() {
   $dbConnection = "mysql:dbname=". $_ENV['DB_NAME'] ."; host=". $_ENV['DB_HOST'] .":". $_ENV['DB_PORT'] ."; charset=utf8";
